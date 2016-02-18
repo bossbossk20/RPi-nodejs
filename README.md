@@ -2,5 +2,4 @@
 ### using nodejs call Python for GPIO on RPi
 > localhost:3000
 
-
-[Alt text](img/model.png)
+[MockupA]: img/model.png "Screenshot of Feature A mockup"
