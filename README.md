@@ -8,7 +8,12 @@
 > $ node localhost:3000
 
 ***
-### Example Program
+#### Example Program
+```
+var PythonShell = require(python-shell)
+```
+
+#### Use Node.js call python  
 ```
 PythonShell.run('YourPythonCode.py', function (err) {
   if (err) throw err;
