@@ -2,11 +2,9 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose')
 var led = require('./models/led/led.route.js')
-
 var app = express()
 
 app.use(express.static('public'))
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 

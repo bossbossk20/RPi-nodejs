@@ -13,7 +13,7 @@
 ***
 #### Example Program
 ```
-$ npm install python-shell 
+$ npm install python-shell
 ```
 ```
 var PythonShell = require(python-shell)
@@ -31,7 +31,8 @@ console.log("test");
 
 
 
-### Pin 22 (GPIO 25)
-### Pin 39 (GND)
+#### Pin 22 (GPIO 25)
+#### Pin 39 (GND)
+#### Resister 222 Ohm
 
 ![ screenshot](img/model.png)
