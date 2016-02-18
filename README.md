@@ -5,7 +5,9 @@
 > $ npm install
 
 
-> $ node localhost:3000
+> $ node index.js
+
+>run localhost:3000
 
 ***
 #### Example Program
