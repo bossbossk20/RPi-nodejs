@@ -13,6 +13,9 @@
 ***
 #### Example Program
 ```
+$ npm install python-shell 
+```
+```
 var PythonShell = require(python-shell)
 ```
 
