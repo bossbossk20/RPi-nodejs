@@ -2,6 +2,7 @@
 ## I use python-shell
 ### using nodejs call Python for GPIO on RPi
 ### Raspberry Pi 2 Model B
+### build status
 #### How to run
 > $ npm install
 
