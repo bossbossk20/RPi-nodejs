@@ -2,8 +2,7 @@
 ## I use python-shell
 ### using nodejs call Python for GPIO on RPi
 ### Raspberry Pi 2 Model B
-### build status
-[ ![Codeship Status for bossbossk20/RPi-nodejs](https://codeship.com/projects/b854d280-da43-0133-63ae-2e49d3281c6a/status?branch=master)](https://codeship.com/projects/143747)
+
 #### How to run
 > $ npm install
 
