@@ -5,7 +5,7 @@
   var router  = express.Router()
 
   router.get('/click', function (req, res, next) {
-    PythonShell.run('led.py', function (err) {
+    PythonShell.run('snapshot.py', function (err) {
       if (err) throw err;
       console.log('finished');
     });
