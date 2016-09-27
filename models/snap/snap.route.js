@@ -6,8 +6,8 @@
 
   router.get('/click', function (req, res, next) {
     PythonShell.run('snapshot.py', function (err) {
-      if (err) throw err;
-      console.log('finished');
+      if (err) { res.send(err) }
+      else res.send('done');
     });
     console.log("test");
 
