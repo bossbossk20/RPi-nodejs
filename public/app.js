@@ -1,22 +1,20 @@
-angular.module('app', [])
-  .controller('TodoListController', function($http) {
-    var app = this;
-    app.test = "hello"
-    console.log(app.value)
+/*global $, angular*/
+angular.module('snapshotApp', [])
+  .controller('snapCtrl', function($http,$scope) {
 
-    app.click = function() {
-      if (app.value===true) {
-        console.log("true")
-          $http.get('/click'). success(function(response) {
-              app.d = response
+    $scope.click = function() {
+      if ($scope.value===true) {
+        console.log("Snapshot!")
+          $http.get('/click').success(function(response) {
+              $scope.data = response
             }).
             error(function(data, status, headers, config) {
-              // log error
               console.log('error')
             })
-
       }
-      else console.log("false")
+      else { 
+	console.log("Not Snap")
+	}
     }
 
 

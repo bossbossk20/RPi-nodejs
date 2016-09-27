@@ -1,4 +1,5 @@
 #!/usr/bin/python
 import os
 
-os.system ("fswebcam fuck.jpg")
+os.system ("fswebcam test.jpg")
+

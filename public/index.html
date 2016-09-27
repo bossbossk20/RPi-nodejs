@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="snapshotApp">
 <head>
   <meta charset="UTF-8">
   <title>RPi</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-
+  <script src="app.js"></script>
   <link rel="stylesheet" href="css.css">
 </head>
-<body ng-controller="TodoListController as app">
-{{app.test}}
+<body ng-controller="snapCtrl">
 
-<input type="checkbox" name="btn" id="btn" ng-model="app.value" ng-click="app.click()">
+
+<input type="checkbox" name="btn" id="btn" ng-model="value" ng-click="click()">
 
 <label class="btn" for="btn"></label>
-  <script src="app.js"></script>
+  
 </body>
 </html>
