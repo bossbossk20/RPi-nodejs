@@ -12,7 +12,7 @@ console.log("test");
 ```
 $ npm install python-shell
 ```
-### How to run
+### How to Run
 ```
  $ npm install
  $ node index.js
