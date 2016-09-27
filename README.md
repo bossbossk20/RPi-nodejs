@@ -18,13 +18,3 @@ $ npm install python-shell
  $ node index.js
 
 ```
-
-
-
-
-
-#### Pin 22 (GPIO 25)
-#### Pin 39 (GND)
-#### Resister 222 Ohm
-
-![ screenshot](img/model.png)
