@@ -3,7 +3,7 @@ angular.module('snapshotApp', [])
   .controller('snapCtrl', function($http,$scope) {
 
     $scope.click = function() {
-      if ($scope.value===true) {
+      if ($scope.value==='snap') {
         console.log("Snapshot!")
           $http.get('/click').success(function(response) {
               $scope.data = response
@@ -16,6 +16,4 @@ angular.module('snapshotApp', [])
 	console.log("Not Snap")
 	}
     }
-
-
   });

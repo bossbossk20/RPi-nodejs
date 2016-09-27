@@ -9,8 +9,6 @@
       if (err) { res.send(err) }
       else res.send('done');
     });
-    console.log("test");
-
   });
   module.exports = router
 })()
