@@ -1,31 +1,22 @@
 # Smart-Fridge-RPi-NodeJS
 
 ### Using NodeJS call python-shell
-
-#### How to run
-> $ npm install
-
-
-> $ node index.js
-
->run localhost:3000
-
-***
-#### Example Program
-```
-$ npm install python-shell
-```
-```
-var PythonShell = require(python-shell)
-```
-
-#### Use Node.js call python  
 ```
 PythonShell.run('YourPythonCode.py', function (err) {
   if (err) throw err;
   console.log('finished');
 });
 console.log("test");
+```
+#### How to run
+```
+ $ npm install
+ $ node index.js
+localhost:3000
+```
+#### How to install python-shell
+```
+$ npm install python-shell
 ```
 
 
