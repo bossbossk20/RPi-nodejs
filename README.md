@@ -8,16 +8,17 @@ PythonShell.run('YourPythonCode.py', function (err) {
 });
 console.log("test");
 ```
-#### How to run
-```
- $ npm install
- $ node index.js
-localhost:3000
-```
-#### How to install python-shell
+### How to install python-shell
 ```
 $ npm install python-shell
 ```
+### How to run
+```
+ $ npm install
+ $ node index.js
+
+```
+
 
 
 
