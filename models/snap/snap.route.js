@@ -7,7 +7,7 @@
   router.get('/click', function (req, res, next) {
     PythonShell.run('snapshot.py', function (err) {
       if (err) { res.send(err) }
-      else res.send('done');
+      else res.send({message : 'done'});
     });
   });
   module.exports = router
