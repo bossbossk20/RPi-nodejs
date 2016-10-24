@@ -1,23 +1,34 @@
-angular.module('app', [])
-  .controller('TodoListController', function($http) {
-    var app = this;
-    app.test = "hello"
-    console.log(app.value)
-
-    app.click = function() {
-      if (app.value===true) {
-        console.log("true")
-          $http.get('/click'). success(function(response) {
-              app.d = response
+/*global $, angular*/
+angular.module('snapshotApp', [])
+  .controller('snapCtrl', function($http,$scope) {
+    $scope.flipStatus = false
+    $scope.click = function() {
+      if ($scope.value==='snap') {
+        console.log("Snapshot!")
+          $http.get('/click').success(function(response) {
+              $scope.data = response
+		console.log(response)
+                 setTimeout(function(){
+                   window.location = 'index.html'
+                  }, 
+	         1500)
             }).
             error(function(data, status, headers, config) {
-              // log error
               console.log('error')
             })
-
       }
-      else console.log("false")
+      else { 
+	console.log("Not Snap")
+	}
     }
-
-
+    $scope.flip = function () {
+      if ($scope.flipStatus === false) {
+         $scope.flipStatus = true
+        console.log($scope.flipStatus)
+      } else {
+        $scope.flipStatus = false
+        console.log($scope.flipStatus)
+     }
+      console.log('flip')
+    }
   });

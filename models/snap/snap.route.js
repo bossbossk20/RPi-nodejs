@@ -5,12 +5,10 @@
   var router  = express.Router()
 
   router.get('/click', function (req, res, next) {
-    PythonShell.run('led.py', function (err) {
-      if (err) throw err;
-      console.log('finished');
+    PythonShell.run('snapshot.py', function (err) {
+      if (err) { res.send(err) }
+      else res.send({message : 'done'});
     });
-    console.log("test");
-
   });
   module.exports = router
 })()

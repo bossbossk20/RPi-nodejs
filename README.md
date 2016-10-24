@@ -1,26 +1,6 @@
-# RPi-nodejs
-## I use python-shell
-### using nodejs call Python for GPIO on RPi
-### Raspberry Pi 2 Model B
+# Smart-Fridge-RPi-NodeJS
 
-#### How to run
-> $ npm install
-
-
-> $ node index.js
-
->run localhost:3000
-
-***
-#### Example Program
-```
-$ npm install python-shell
-```
-```
-var PythonShell = require(python-shell)
-```
-
-#### Use Node.js call python  
+### Using NodeJS call python-shell
 ```
 PythonShell.run('YourPythonCode.py', function (err) {
   if (err) throw err;
@@ -28,12 +8,13 @@ PythonShell.run('YourPythonCode.py', function (err) {
 });
 console.log("test");
 ```
+### How to install python-shell
+```
+$ npm install python-shell
+```
+### How to Run
+```
+ $ npm install
+ $ node index.js
 
-
-
-
-#### Pin 22 (GPIO 25)
-#### Pin 39 (GND)
-#### Resister 222 Ohm
-
-![ screenshot](img/model.png)
+```

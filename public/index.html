@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="snapshotApp">
 <head>
   <meta charset="UTF-8">
-  <title>RPi</title>
+  <title>Smart-Fridge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>  
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-
-  <link rel="stylesheet" href="css.css">
-</head>
-<body ng-controller="TodoListController as app">
-{{app.test}}
-
-<input type="checkbox" name="btn" id="btn" ng-model="app.value" ng-click="app.click()">
-
-<label class="btn" for="btn"></label>
   <script src="app.js"></script>
+</head>
+<body ng-controller="snapCtrl">
+
+
+ <div style="margin-top:10px; margin-left:10px; " class="btn-floating btn-large waves-effect waves-light amber darken-3" ng-init="value = 'snap'" ng-click="click()"><i class="material-icons">videocam</i></div>
+ <img class="responsive-img" src="Front.jpg" ng-hide=flipStatus>
+ <h1 ng-hide="!flipStatus">Back</h1>
+ <button ng-click="flip()">FLIP</button> 
 </body>
 </html>
